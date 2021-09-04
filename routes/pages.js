@@ -15,8 +15,8 @@ router.get("/", function (req, res, err) {
       if (err) console.log(err);
 
       res.render("index", {
-        title: page?.title,
-        content: page?.content,
+        title: page.title,
+        content: page.content,
       });
     });
   }
@@ -35,8 +35,8 @@ router.get("/:slug", function (req, res) {
       res.redirect("/");
     } else {
       res.render("index", {
-        title: page?.title,
-        content: page?.content,
+        title: page.title,
+        content: page.content,
       });
     }
   });
